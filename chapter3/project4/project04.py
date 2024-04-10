@@ -6,9 +6,12 @@ import qrcode
 
 import os
 
+# file_path = r'chapter3/project4/qr코드모음.txt'
+
 # 경로를 .py파일의 실행경로로 이동, 현재 경로로 이동
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 file_path = r'qr코드모음.txt'
+print("file_path : ", file_path)
 with open(file_path, 'rt', encoding='UTF8') as f :
   read_lines = f.readlines()
 
